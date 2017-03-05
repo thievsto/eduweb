@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Zadanie 2</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.js"></script>
+        <script type="text/javascript" src="js.js"></script>
+        <link href="style.css" rel="stylesheet">
+	</head>
+
+	<body>
+<div>
+        <h1> Zadanie nr 2.</h1>
+    <h3>Podaj przykłady selektorów, które pozwolą znaleźć na stronie następujące elementy:</h3>
+    <div class="zadanie">
+    - wszystkie elementy "div", posiadające zarówno klasę “grid” oraz klasę “grid-12”.
+        <br>
+        
+        <div class="tab1 ">
+            <div class="grid">DIV class <b>grid</b></div>
+            <div class="grid grid-12">DIV class <b>grid</b> oraz <b>grid-12</b></div>
+            <div class="janusz">DIV class <b>janusz</b></div>
+            <div class="grid-12">DIV class <b>grid-12</b></div>
+            <div class="grazyna">DIV class <b>grazyna</b></div>
+            </div>
+          <div>    <input id="check1" value="Check!" type="button"/></div>
+           
+     <div class="zadanie">
+         wszystkie elementy "a", których atrybut “href" zaczyna się na “http”, znajdujące się w
+elemencie o klasie “nav”
+        <br>
+        
+        <div class="nav" >
+            <div class="tab2"><a href="#">href=#</a></div>
+            <div class="tab2">to nie jest element a</div>
+            <div class="tab2"><a href="http://google.pl">http://google.pl</a></div>
+            <div class="tab2"><a href="https://www.w3schools.com">https://www.w3schools.com</a></div>
+            <div class="tab2"><a href="www.eduweb.pl">www.eduweb.pl</a></div>
+            </div>
+          <div>    <input id="check2" value="Check!" type="button"/></div>
+         
+          <div class="zadanie">
+         wszystkie elementy <b>input</b>, których typ to “radio” lub “checkbox” oraz dodatkowo nie
+są aktualnie zaznaczone (checked).
+        <br>
+        
+        <div class="nav" >
+            <div class="tab3"><input type="button" value="button"> button</div>
+            <div class="tab3"><input type="checkbox" value="checkbox" > checkbox</div>
+            <div class="tab3"><input type="checkbox" value="checkbox" checked> checkbox checked</div>
+            <div class="tab3"><input type="radio" value="radio"> radio</div>
+               <div class="tab3"><input type="radio" value="radio" checked> radio checked</div>
+            <div class="tab3"><input type="text" value="text"> text</div>
+           
+     
+            </div>
+          <div>    <input id="check3" value="Check!" type="button"/></div>
+       </div>
+         
+         <div class="zadanie">
+         wyłącznie pierwszy element p, który jest pusty (nie zawiera dzieci) oraz znajduje się w
+elemencie div z identyfikatorem “text”
+        <br>
+        
+        <div class="nav" >
+            <div class="tab4" id="nietext"><p></p></div>
+            <div class="tab4" id="text"><p>i juz nie jest pusty</p></div>
+            <div class="tab4" id="text"><p></p></div>
+            <div class="tab4" id="text"><p>tu jest samo p</p></div>
+            <div class="tab4" id="innytext"><p>tu jest p <a href="#">z linkiem</a> w innym id</p></div>
+            <div class="tab4" id="text"><p></p></div>
+            <div class="tab4" id="cyferki"><p>tu jest p z </p><input type="radio" value="radio" checked> checkboxem i innym id</div>
+       
+           
+     
+            </div>
+          <div>    <input id="check4" value="Check!" type="button"/></div>
+       </div>
+         
+         
+   <div class="zadanie">
+         wszystkie elementy z klasą “pagination-item”, które nie są elementem span
+        <br>
+        <div class="nav" >
+            <div class="tab5" ><span color="red">sam span</span></div>
+            <div class="tab5" ><span ><div class="pagination-item">div pagination-item w span</div></span></div>
+            <div class="tab5" ><div class="pagination-item">div class pagination-item bez span</div></div>
+            <div class="tab5" ><span ><div class="janusz">div class janusz w span</div></span></div>
+            <div class="tab5" ><div class="pagination-item">div class pagination-item bez span</div></div>
+            <div class="tab5" ><span ><div class="pagination-item">div pagination-item w span</div></span></div>
+           
+     
+        </div>
+          <div>    <input id="check5" value="Check!" type="button"/></div>
+    </div>      
+                
+        
+        </div>
+	</body>
+</html>
